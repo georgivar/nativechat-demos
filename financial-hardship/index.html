@@ -23,7 +23,7 @@
         line-height: .96;
       }
       #chat {
-        height: 600px;
+        height: 700px;
         border: 10px solid #fff;
         box-shadow: 0 0 10px rgba(0,0,0,.2);
       }
@@ -51,46 +51,45 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xl-5">
-          
-    <h1 class="my-4">NativeChat Financial Hardship Relfief Bot Sample</h1>
-  <p>ACME Bank offers financial relief options to their customers.</p>
-<p>THe bot helps bank's customer apply for hardship relief.</p>
+        <div class="col-xl-5">          
+          <h1 class="my-4">NativeChat Financial Hardship Relfief Bot Sample</h1>
+          <p>ACME Bank offers financial relief options to their customers.</p>
+          <p>The bot helps bank's customer apply for hardship relief.</p>
         </div>
         <div class="col-xl-5 offset-xl-2">
-    <div id="chat" class="my-4 mx-auto"></div>
-    <script src="https://web-chat.nativechat.com/2.15.0/sdk/nativechat.js"></script>
-    <link href="https://web-chat.nativechat.com/2.15.0/sdk/nativechat.css" rel="stylesheet" type="text/css">
-    <script>
-  var chatSettings = {
-    bot: {
-      id: "2e4ada7e8dcc496a82adf0af"
-    },
-    channel: {
-      id: "43a45f67-80de-4099-967c-9305beb88a81",
-      token: "44fee531-d0b5-43ca-ac26-7b50588e9bd3"
-    },
-    googleApiKey: "your-google-maps-API-key",
-    session: {
-      clear: true
-    }
-  };
+          <div id="chat" class="my-4 mx-auto"></div>
+          <script src="https://web-chat.nativechat.com/2.15.0/sdk/nativechat.js"></script>
+          <link href="https://web-chat.nativechat.com/2.15.0/sdk/nativechat.css" rel="stylesheet" type="text/css">
+          <script>
+        var chatSettings = {
+          bot: {
+            id: "2e4ada7e8dcc496a82adf0af"
+          },
+          channel: {
+            id: "43a45f67-80de-4099-967c-9305beb88a81",
+            token: "44fee531-d0b5-43ca-ac26-7b50588e9bd3"
+          },
+          googleApiKey: "your-google-maps-API-key",
+          session: {
+            clear: true
+          }
+        };
 
-  const load = () => {
-      window.NativeChat.load({
-      id: "kcChatWindow",
-      origin: "",
-      display: {
-        mode: "inline",
-        containerId: "chat"
-      },
-      chat: chatSettings
-    });
-  };
-  window.onload = load;
-</script>
-        </div>
+        const load = () => {
+            window.NativeChat.load({
+            id: "kcChatWindow",
+            origin: "",
+            display: {
+              mode: "inline",
+              containerId: "chat"
+            },
+            chat: chatSettings
+          });
+        };
+        window.onload = load;
+      </script>
       </div>
+    </div>
     <p>Powered by <a href="https://www.progress.com/nativechat/" target="_blank">Progress NativeChat</a>.</p>
   </div>
 

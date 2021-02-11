@@ -76,14 +76,18 @@
     }
   };
 
-  window.NativeChat.load({
-    id: "kcChatWindow",
-    origin: "",
-    display: {
-        mode: "modal"
-    },
-    chat: chatSettings
-  });
+  const load = () => {
+      window.NativeChat.load({
+      id: "kcChatWindow",
+      origin: "",
+      display: {
+        mode: "inline",
+        containerId: "chat"
+      },
+      chat: chatSettings
+    });
+  };
+  window.onload = load;
 </script>
         </div>
       </div>
